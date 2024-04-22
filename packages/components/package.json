@@ -5,12 +5,6 @@
   "files": [
     "dist"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/components.es.js",
-      "require": "./dist/components.umd.js"
-    }
-  },
   "main": "./dist/components.umd.js",
   "module": "./dist/components.es.js",
   "types": "./dist/index.d.ts",
