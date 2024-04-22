@@ -1,10 +1,12 @@
 import "./App.css";
-import { Header } from "@npm-workspace-demo/components";
+import { Header, hello } from "@npm-workspace-demo/components";
 
 function App() {
+  const output = hello();
+  const text = "App2:" + output;
   return (
     <>
-      <Header text="Hello World from app2" />
+      <Header text={text} />
     </>
   );
 }
