@@ -2,7 +2,18 @@
   "name": "components",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/components.es.js",
+      "require": "./dist/components.umd.js"
+    }
+  },
+  "main": "./dist/components.umd.js",
+  "module": "./dist/components.es.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
