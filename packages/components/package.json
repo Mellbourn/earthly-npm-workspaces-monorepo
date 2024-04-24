@@ -5,7 +5,7 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/components.umd.js",
+  "main": "./dist/components.cjs.js",
   "module": "./dist/components.es.js",
   "types": "./dist/index.d.ts",
   "scripts": {

@@ -18,8 +18,11 @@ export default defineConfig(() => ({
     lib: {
       entry: resolve("src", "components/index.ts"),
       name: "Components",
-      formats: ["es", "umd"],
-      fileName: (format) => `components.${format}.js`,
+      formats: ["es", "cjs"],
+      fileName: (format) => {
+        // if (format === "umd") return `components.js`;
+        return `components.${format}.js`;
+      },
     },
     rollupOptions: {
       external: [...Object.keys(packageJson.peerDependencies)],
