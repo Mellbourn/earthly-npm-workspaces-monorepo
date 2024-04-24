@@ -6,10 +6,11 @@
     "android": "expo start --android",
     "format": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix && prettier \"**/*.{js,jsx,ts,tsx,json}\" --write",
     "ios": "expo start --ios",
-    "start": "expo start",
+    "start": "expo start --clear",
     "web": "expo start --web"
   },
   "dependencies": {
+    "@npm-workspace-demo/components": "^0.0.0",
     "tamagui": "1.74.8",
     "@tamagui/font-inter": "1.74.8",
     "@tamagui/shorthands": "1.74.8",

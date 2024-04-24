@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:native": "npm run build -w apps/native",
+    "build:packages": "npm run build --if-present -w=packages/components",
+    "build:watch:components": "npm run build:watch -w=packages/components",
+    "build:watch": "run-p -rl build:watch:*",
+    "build:web": "npm run build -w apps/app1",
+    "build": "npm run build --if-present --workspaces",
+    "native": "npm run build:packages && npm start -w=apps/native",
+    "web": " npm run build:packages && npm run dev -w=apps/app1",
     "clean": "npm run clean --if-present --workspaces && rm -rf node_modules && npm cache clean --force "
   },
   "keywords": [],
@@ -13,5 +20,8 @@
   "workspaces": [
     "./packages/*",
     "./apps/*"
-  ]
+  ],
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
 }

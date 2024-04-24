@@ -22,5 +22,18 @@ config.resolver.nodeModulesPaths = [
 ];
 // 3. Force Metro to resolve (sub)dependencies only from the `nodeModulesPaths`
 // config.resolver.disableHierarchicalLookup = true;
+// console.log('config', config);
+// config.resolver.sourceExts = [
+//   'jsx',
+//   'js',
+//   'ts',
+//   'tsx',
+//   'json',
+//   'cjs',
+//   'cjx',
+//   'mjs',
+//   'umd',
+//   'umd.js',
+// ];
 
 module.exports = config;
