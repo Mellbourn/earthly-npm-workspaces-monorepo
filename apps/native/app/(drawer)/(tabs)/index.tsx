@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Stack.Screen options={{ title }} />
       <Container>
-        <ScreenContent path="app/(drawer)/(tabs)/index.tsx" title="Tab One" />
+        <ScreenContent path="app/(drawer)/(tabs)/index.tsx" title={title} />
       </Container>
     </>
   );
