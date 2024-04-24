@@ -1,5 +1,5 @@
 export type IHello = () => void;
 
 export const hello: IHello = () => {
-  return "Hello from a component 2!";
+  return "Hello from rollup again";
 };
