@@ -6,7 +6,7 @@
     "dist"
   ],
   "main": "./dist/components.umd.js",
-  "module": "./dist/components.es.js",
+  "module": "./dist/components.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
